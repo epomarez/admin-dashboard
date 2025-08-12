@@ -283,3 +283,23 @@ ul .icon {
     border-top: 1.5px solid #929191;
     border-bottom: 1.5px solid #929191;
 }
+
+.trend {
+    display: grid;
+    margin: 1rem 1rem;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.trend .user-icon {
+    border-radius: 100%;
+    height: 2.5em;
+    width: 2.5em;
+    fill: #D21963;
+    background-color: #ECF3CF;
+
+}
+
+.trend .info-trend {
+    font-size: 0.8rem;
+}
