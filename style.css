@@ -235,11 +235,11 @@ ul .icon {
 
 .project-resume {
     height: 100%;
-    width: 15rem;
     padding: 12px 10px;
 
     display: grid;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 20% 60%;
+    gap: 1rem;
 }
 
 .project-resume>p+p {
@@ -250,6 +250,8 @@ ul .icon {
 .project .options {
     justify-self: end;
     gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1rem);
 }
 
 .section .news {
