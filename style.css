@@ -200,7 +200,7 @@ ul .icon {
 
 .container>.section {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr minmax(100px, 250px);
     grid-template-rows: fit-content;
     grid-area: 2/2/3/3;
     background-color: #E2E8F0;
@@ -240,7 +240,10 @@ ul .icon {
 .section .news {
     padding-top: 1rem;
     display: grid;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: auto auto;
+    /* Nota personal: auto es importante porque da flexibilidad de tamaño,
+        de manera que no hayan desbordamientos o superposiciones.
+    */
     gap: 20px;
 }
 
@@ -254,4 +257,29 @@ ul .icon {
 .content-trending {
     background-color: #fff;
     border-radius: 10px;
+}
+
+.content-announcements {
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    padding: 4% 10%;
+    font-size: 0.8rem;
+    color: #393939;
+
+}
+
+.content-announcements .announcement {
+
+    padding: 10px 0px;
+}
+
+.content-announcements .title {
+    font-size: 0.9rem;
+    /* margin-top: 1rem; */
+    color: #000;
+}
+
+.content-announcements>.announcement:nth-child(2) {
+    border-top: 1.5px solid #929191;
+    border-bottom: 1.5px solid #929191;
 }
